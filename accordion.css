@@ -42,16 +42,19 @@
 }
 
 
+.accordion-heading button {
+    text-transform: none;
+    font-size: 17px;
+    line-height: 24px;
+}
 
-
-
-
-
-
-
-
-
-
+@media only screen and (max-width: 767px) {
+    .accordion-heading button {
+        text-transform: none;
+        font-size: 16px;
+        line-height: 21px;
+    }
+}
 
 
 .accordion:focus-within {
@@ -62,18 +65,9 @@
     background-color: hsl(0deg 0% 97%);
 }
 
-
-
-
-
 .accordion-trigger:focus {
   /*  outline: 4px solid transparent; */
 }
-
-
-
-
-
 
 .accordion-title {
     display: block;
@@ -118,4 +112,3 @@
 .accordion-panel[hidden] {
     display: none;
 }
-
